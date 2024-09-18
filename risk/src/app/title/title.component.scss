@@ -1,0 +1,22 @@
+#title-component {
+    @include flex-column;
+    align-items: center;
+    padding: 2rem;
+
+    h1 {
+        color: lightgrey;
+        border-bottom: 2px solid lightgrey; 
+    }
+
+    h2 {
+        color: lightgrey;
+    }
+
+    h3 {
+        color: white;
+        background-color: grey;
+        padding: 0.5rem 2rem;
+        font-size: 1.5rem;
+        border-radius: 5px;
+    }
+}

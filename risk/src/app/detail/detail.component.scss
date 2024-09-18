@@ -1,0 +1,41 @@
+@import '../variables.scss';
+
+#details-component {
+    height: 90%;
+    @include flex-column;
+    justify-content: start;
+    border: 1px solid black;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    
+    app-busy {
+        @include busy;
+    }
+
+    h1 {
+        @include zero-bottom-space;
+    }
+
+    a {
+        @include zero-space;
+        @include link;
+        margin-top: 2rem;
+    }
+    
+    p {
+        @include zero-space;
+
+        &>span {
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+
+        &:nth-child(3),
+        &:nth-child(5),
+        &:nth-child(7) {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+

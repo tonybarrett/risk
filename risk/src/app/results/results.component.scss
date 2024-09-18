@@ -1,0 +1,36 @@
+@import '../variables.scss';
+
+#results-component {
+    @include flex-column;
+    height: 90%;
+    justify-content:space-between;
+    border: 1px solid black;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    
+    app-busy {
+        @include busy;
+    }
+
+    #company-list {
+        @include flex-column;
+        min-width: 100%;
+        align-items: start;
+        gap: 0.5rem;
+
+        p {
+            padding: 0;
+            margin: 0;
+            
+            &>span {
+                font-weight: bold;
+            }
+        }
+
+        a {
+            @include zero-space;
+            @include link;
+        }
+    }
+}
+

@@ -1,0 +1,9 @@
+@import '../variables.scss';
+
+#busy-component {
+    @include flex-row;
+}
+
+.circle {
+    @include circle;
+}

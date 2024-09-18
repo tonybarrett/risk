@@ -1,0 +1,31 @@
+@import '../variables.scss';
+
+#search-component {
+    @include flex-column;
+    height: 90%;
+    justify-content:space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding-bottom: 2rem;
+    
+    app-busy {
+        @include busy;
+    }
+    
+    button {
+        padding: 0.5rem 2rem;
+        border-radius: 10px;
+    }
+    
+    input{
+        min-width: 300px;
+
+        &::placeholder {
+            color: lightgrey;
+            text-align: center;
+        }
+    }
+}
+
+
+    

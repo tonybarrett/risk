@@ -1,0 +1,41 @@
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin busy {
+    min-width: 100%;
+    margin-left: -1rem;
+}
+
+@mixin circle {
+    min-width: 0.5rem;
+    min-height: 0.5rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: grey;
+    margin: 0.25rem 0.125rem;
+}
+
+@mixin zero-space {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin zero-bottom-space {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin link {
+    color: blue;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+}
+

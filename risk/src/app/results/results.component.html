@@ -1,0 +1,13 @@
+<div id="results-component">
+    <app-busy></app-busy>
+    <h1>SEARCH RESULTS</h1>
+    <div id="company-list">
+        @for(company of companies; track company.name) {
+            <div class="company">
+                <a ref="#">{{company.name}}</a>
+                <p><span>{{company.number}}</span>&nbsp;&dash;&nbsp;Incorporated on {{company.incorporated}}</p>
+                <p>{{company.address}}</p>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div id="officers-component">
+    <app-busy></app-busy>
+    <h1><span>{{companyName}}</span>&nbsp;&dash;&nbsp;Officers</h1>
+    <p>Company Number&nbsp;<span>{{companyNumber}}</span></p>
+    <div id="officer-list">
+        @for(officer of officers; track officer.name) {
+            <div class="officer">
+                <p>{{officer.name}}</p>
+                <p>{{officer.position}}</p>
+            </div>
+        }
+    </div>
+</div>
